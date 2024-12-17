@@ -73,9 +73,9 @@ class Generator:
 
             self.llm = llama_cpp.Llama(
                 model_path=absolute_path(".models/LLaMA-Mesh-Q4_K_M.gguf"),
-                n_gpu_layers=-1,
+                n_gpu_layers=-100,
                 seed=1337,
-                n_ctx=4096,
+                n_ctx=12288,
             )
 
             print("Finished loading generator.")
